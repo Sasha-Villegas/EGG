@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ejer.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="form-container">
+        <form id="myForm">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" required>
+          <div class="error-message" id="emailError"></div>
+    
+          <label for="age">Edad:</label>
+          <input type="number" id="age" required>
+          <div class="error-message" id="ageError"></div>
+    
+          <label for="employeeType">Tipo de empleado:</label>
+          <select id="employeeType" required>
+            <option value="">Seleccione un tipo de empleado</option>
+            <option value="vendedor">Vendedor</option>
+            <option value="encargado">Encargado de turno</option>
+            <option value="supervisor">Supervisor general</option>
+          </select>
+    
+          <div id="vendedorFields" style="display: none;">
+            <label for="salesCount">Cantidad de ventas:</label>
+            <input type="number" id="salesCount" min="1">
+            <div class="error-message" id="salesCountError"></div>
+    
+            <label for="totalSales">Monto total vendido:</label>
+            <input type="number" id="totalSales" step="0.01" min="0">
+            <div class="error-message" id="totalSalesError"></div>
+          </div>
+    
+          <div id="encargadoFields" style="display: none;">
+            <label for="employeesCount">Cantidad de empleados a cargo:</label>
+            <input type="number" id="employeesCount" min="5">
+            <div class="error-message" id="employeesCountError"></div>
+          </div>
+    
+          <div id="supervisorFields" style="display: none;">
+            <label for="locationsCount">Cantidad de locales administrados:</label>
+            <input type="number" id="locationsCount" min="2">
+            <div class="error-message" id="locationsCountError"></div>
+    
+            <label for="performanceDescription">Descripción del desempeño general:</label>
+            <textarea id="performanceDescription"></textarea>
+            <div class="error-message" id="performanceDescriptionError"></div>
+          </div>
+    
+          <fieldset>
+            <legend>Turno</legend>
+            <label>
+              <input type="radio" name="turno" value="manana">
+              Mañana
+            </label>
+            <label>
+              <input type="radio" name="turno" value="tarde">
+              Tarde
+            </label>
+          </fieldset>
+    
+          <label for="favoriteColor">Color favorito:</label>
+          <input type="text" id="favoriteColor" list="colors">
+          <datalist id="colors">
+            <option value="amarillo">
+            <option value="azul">
+            <option value="rojo">
+            <option value="verde">
+            <option value="naranja">
+            <option value="violeta">
+            <option value="blanco">
+            <option value="negro">
+          </datalist>
+    
+          <input type="submit" value="Enviar" disabled>
+        </form>
+      </div>
+
+
+    <script src="ejer.js"></script>
+</body>
+</html>

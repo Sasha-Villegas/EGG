@@ -1,0 +1,32 @@
+Body{
+    display: flex;    
+}
+
+.DivExterno{
+border: darkkhaki;
+background-color: coral;
+width: 200px;
+height: 200px;
+position: absolute;
+left: 50%;
+}
+
+.DivMedio{
+    border: darkkhaki;
+    background-color: blue;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.DivInterno{
+    border: darkkhaki;
+    background-color:chocolate;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 50%;
+    bottom: 10%;
+}

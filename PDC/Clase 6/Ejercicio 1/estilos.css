@@ -1,0 +1,25 @@
+
+.DivExterno{
+    /*margin: 80px;*/
+    padding: 2px;
+    width: 500px;
+    height: 500px;
+    background-color: blueviolet ;
+    }
+
+.DivMedio{
+    margin: 30px;
+    padding: 20px;
+    border: 10px;
+    width: 400px;
+    height: 400px;
+    background-color: aqua;
+}
+
+.DivInterno{
+    /*margin: 30px;
+    padding: 20px;*/
+    width: 100%;
+    height: 100%;
+    background-color: chartreuse;
+    }

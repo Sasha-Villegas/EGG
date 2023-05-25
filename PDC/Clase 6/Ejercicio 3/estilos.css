@@ -1,0 +1,13 @@
+Body{
+    background-color: aqua;
+}
+
+@media only screen and (max-width: 600px) 
+{Body {
+    background-color: black;
+}}
+
+@media only screen and (max-width: 400px) 
+{Body{
+    background-color: red;
+}}
